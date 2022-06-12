@@ -20,6 +20,9 @@
   );
 }
 .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
   border-radius: 30px;
   border: 1px solid white;
   position: absolute;
@@ -29,4 +32,26 @@
   width: 1500px;
   height: 800px;
   background-color: rgba(8, 1, 5, 0.658);
+}
+#selecting {
+  margin: 20px;
+  width: 100px;
+  display: inline-block;
+}
+#url {
+  border-radius: 30px;
+  padding: 10px;
+}
+#submit {
+  border-radius: 30px;
+  padding: 10px;
+}
+.request {
+  top: 70px;
+  left: 50px;
+  position: absolute;
+  width: 1400px;
+  height: 700px;
+  background-color: white;
+  border-radius: 30px;
 }
