@@ -21,14 +21,16 @@ function App() {
       await axios
         .get(url)
         .then((res) => {
-          setRessa(res);
-          console.log(res);
+          setRessa(res.data);
         })
         .catch((err) => console.log(err));
     } else {
       console.log("Couldn't request");
     }
   }
+  const returnRes = () => {
+    return <div className="request">{ressa}</div>;
+  };
 
   return (
     <div className="App">
@@ -43,6 +45,7 @@ function App() {
         <button onClick={handleButton} type="submit" id="submit">
           REQUEST
         </button>
+        {returnRes()}
       </div>
     </div>
   );
